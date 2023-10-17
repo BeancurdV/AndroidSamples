@@ -1,8 +1,5 @@
-# 使用方式：python frida_01_hook.py
-
-import time
-import frida
-
+# 使用方式：python frida_02_hook.py
+# 解决函数重载问题 "Error: xx(): has more than one overload, use .overload(<signature>) to choose from
 print("frida ============= 1");
 
 jscode = """
@@ -23,21 +20,31 @@ Java.perform(function x() {
 });
 """
 
+import time
+import frida
+
+def my_message_handler(message, payload):  # 定义错误处理
+    print(message)
+    print(payload)
+
 # 连接安卓机上的frida-server
 device = frida.get_usb_device()
 
-print("frida ============= 2");
 # 启动`demo02`这个app
 pid = device.spawn(["com.beancurd.androidsamples"])
-print(pid);
+
+print(f"[*] PID: {pid}")
+
 device.resume(pid)
-print("frida ============= 3");
+
 time.sleep(1)
 session = device.attach(pid)
-print(jscode);
+
+# 加载s1.js脚本
 script = session.create_script(jscode)
+
+script.on("message", my_message_handler)  # 调用错误处理
 script.load()
 
 # 脚本会持续运行等待输入
-# raw_input()
 input()
