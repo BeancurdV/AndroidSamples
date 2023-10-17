@@ -1,8 +1,8 @@
 package com.beancurd.androidsamples
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
             while (true){
                 Thread.sleep(1000)
                 xx(50,30)
+                Log.d("XXXSum", xx("LoWeRcAsE Me!!!!!!!!!"))
             }
         }).start()
     }
