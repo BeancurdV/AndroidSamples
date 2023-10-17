@@ -25,4 +25,12 @@ Java.perform(function x() {
         console.log("*************************************");
         return ret;
     };
+
+    Java.choose("com.beancurd.androidsamples.MainActivity", {
+        onMatch : function(instance){ //该类有多少个实例，该回调就会被触发多少次
+          console.log("Found instance: " + instance);
+          console.log("Result of secret func: " + instance.secret());
+        },
+        onComplete:function(){}
+    });
 });
