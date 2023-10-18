@@ -1,0 +1,236 @@
+ninja: Entering directory `/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/.cxx/Debug/4s4g2t2k/x86_64'
+[1/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/mpglib_interface.c.o
+[2/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/gain_analysis.c.o
+[3/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/fft.c.o
+[4/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/encoder.c.o
+[5/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/VbrTag.c.o
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:263:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[0], 8u, 0xffu);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:265:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 3u, 7);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:266:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, (cfg->samplerate_out < 16000) ? 0 : 1);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:267:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, cfg->version);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:268:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 2u, 4 - 3);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:269:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, (!cfg->error_protection) ? 1 : 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:271:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 4u, eov->bitrate_index);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:272:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 2u, cfg->samplerate_index);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:273:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 1u, 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:274:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 1u, cfg->extension);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:276:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, cfg->mode);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:277:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, eov->mode_ext);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:278:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 1u, cfg->copyright);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:279:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 1u, cfg->original);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:280:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, cfg->emphasis);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:254:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:430:23: warning: comparison of array 'pTagData->toc' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+        if (pTagData->toc != NULL) {
+            ~~~~~~~~~~^~~    ~~~~
+16 warnings generated.
+[6/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/bitstream.c.o
+[7/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/newmdct.c.o
+[8/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/presets.c.o
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:170:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp, set->quant_comp, -1);
+    ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:170:5: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:171:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp_short, set->quant_comp_s, -1);
+    ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:171:5: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:284:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp, abr_switch_map[r].quant_comp, -1);
+    ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:284:5: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:285:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp_short, abr_switch_map[r].quant_comp_s, -1);
+    ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:285:5: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+4 warnings generated.
+[9/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/vbrquantize.c.o
+[10/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/reservoir.c.o
+[11/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/id3tag.c.o
+[12/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/tables.c.o
+[13/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/lame.c.o
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:641:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (EQ(gfp->compression_ratio, 0))
+            ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:641:13: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:641:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (EQ(gfp->compression_ratio, 0))
+            ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:641:13: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:1606:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (NEQ(RadioGain, GAIN_NOT_ENOUGH_SAMPLES)) {
+            ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:177:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:1606:13: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:177:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:1606:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (NEQ(RadioGain, GAIN_NOT_ENOUGH_SAMPLES)) {
+            ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:177:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.c:1606:13: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:177:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+4 warnings generated.
+[14/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/version.c.o
+[15/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/quantize_pvt.c.o
+[16/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/quantize.c.o
+[17/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/takehiro.c.o
+[18/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/psymodel.c.o
+[19/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/util.c.o
+[20/22] Building C object CMakeFiles/lamemp3.dir/libmp3lame/set_get.c.o
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        assert((0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1));
+                                                                       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        assert((0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1));
+                                                                       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+2 warnings generated.
+[21/22] Building CXX object CMakeFiles/lamemp3.dir/lamemp3_cpp.cpp.o
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/lamemp3_cpp.cpp:11:1: warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+1 warning generated.
+[22/22] Linking CXX shared library /Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/build/intermediates/cxx/Debug/4s4g2t2k/obj/x86_64/liblamemp3.so

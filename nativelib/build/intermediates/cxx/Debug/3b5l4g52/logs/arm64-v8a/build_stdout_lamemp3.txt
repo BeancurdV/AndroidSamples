@@ -1,0 +1,133 @@
+ninja: Entering directory `/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/.cxx/Debug/3b5l4g52/arm64-v8a'
+[1/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/mpglib_interface.c.o
+FAILED: CMakeFiles/lamemp3.dir/libmp3lame/mpglib_interface.c.o 
+/Users/zhangfengcheng/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=aarch64-none-linux-android24 --sysroot=/Users/zhangfengcheng/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dlamemp3_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -DHAVE_LIMITS_H -DHAVE_MPGLIB -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/lamemp3.dir/libmp3lame/mpglib_interface.c.o -MF CMakeFiles/lamemp3.dir/libmp3lame/mpglib_interface.c.o.d -o CMakeFiles/lamemp3.dir/libmp3lame/mpglib_interface.c.o -c /Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:83:8: error: unknown type name 'MPSTR'
+static MPSTR   mp;
+       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:88:5: warning: implicit declaration of function 'ExitMP3' is invalid in C99 [-Wimplicit-function-declaration]
+    ExitMP3(&mp);
+    ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:96:12: warning: implicit declaration of function 'InitMP3' is invalid in C99 [-Wimplicit-function-declaration]
+    (void) InitMP3(&mp);
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:129:29: error: unknown type name 'PMPSTR'
+decode1_headersB_clipchoice(PMPSTR pmp, unsigned char *buffer, size_t len,
+                            ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:133:59: error: expected identifier
+                            int (*decodeMP3_ptr) (PMPSTR, unsigned char *, int, char *, int,
+                                                          ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:171:31: error: use of undeclared identifier 'freqs'
+        mp3data->samplerate = freqs[pmp->fr.sampling_frequency];
+                              ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:185:32: error: use of undeclared identifier 'tabsel_123'
+            mp3data->bitrate = tabsel_123[pmp->fr.lsf][pmp->fr.lay - 1][pmp->fr.bitrate_index];
+                               ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:199:10: error: use of undeclared identifier 'MP3_OK'
+    case MP3_OK:
+         ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:226:10: error: use of undeclared identifier 'MP3_NEED_MORE'
+    case MP3_NEED_MORE:
+         ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:230:10: error: use of undeclared identifier 'MP3_ERR'
+    case MP3_ERR:
+         ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:258:55: error: use of undeclared identifier 'decodeMP3'
+                                       sizeof(short), decodeMP3);
+                                                      ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:333:17: error: invalid application of 'sizeof' to an incomplete type 'hip_global_flags' (aka 'struct mpstr_tag')
+    hip_t hip = lame_calloc(hip_global_flags, 1);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:161:56: note: expanded from macro 'lame_calloc'
+#define lame_calloc(TYPE, COUNT) ((TYPE*)calloc(COUNT, sizeof(TYPE)))
+                                                       ^     ~~~~~~
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.h:1027:8: note: forward declaration of 'struct mpstr_tag'
+struct hip_global_struct;
+       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:32:27: note: expanded from macro 'hip_global_struct'
+#define hip_global_struct mpstr_tag 
+                          ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:334:5: warning: implicit declaration of function 'InitMP3' is invalid in C99 [-Wimplicit-function-declaration]
+    InitMP3(hip);
+    ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:342:9: warning: implicit declaration of function 'ExitMP3' is invalid in C99 [-Wimplicit-function-declaration]
+        ExitMP3(hip);
+        ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:362:59: error: use of undeclared identifier 'decodeMP3_unclipped'; did you mean 'hip_decode1_unclipped'?
+                                           sizeof(FLOAT), decodeMP3_unclipped);
+                                                          ^~~~~~~~~~~~~~~~~~~
+                                                          hip_decode1_unclipped
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:353:1: note: 'hip_decode1_unclipped' declared here
+hip_decode1_unclipped(hip_t hip, unsigned char *buffer, size_t len, sample_t pcm_l[], sample_t pcm_r[])
+^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:439:59: error: use of undeclared identifier 'decodeMP3'
+                                           sizeof(short), decodeMP3);
+                                                          ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:448:12: error: incomplete definition of type 'struct mpstr_tag'
+        hip->pinfo = pinfo;
+        ~~~^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.h:1027:8: note: forward declaration of 'struct mpstr_tag'
+struct hip_global_struct;
+       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:32:27: note: expanded from macro 'hip_global_struct'
+#define hip_global_struct mpstr_tag 
+                          ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:457:12: error: incomplete definition of type 'struct mpstr_tag'
+        hip->report_err = func;
+        ~~~^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.h:1027:8: note: forward declaration of 'struct mpstr_tag'
+struct hip_global_struct;
+       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:32:27: note: expanded from macro 'hip_global_struct'
+#define hip_global_struct mpstr_tag 
+                          ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:464:12: error: incomplete definition of type 'struct mpstr_tag'
+        hip->report_dbg = func;
+        ~~~^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.h:1027:8: note: forward declaration of 'struct mpstr_tag'
+struct hip_global_struct;
+       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:32:27: note: expanded from macro 'hip_global_struct'
+#define hip_global_struct mpstr_tag 
+                          ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:471:12: error: incomplete definition of type 'struct mpstr_tag'
+        hip->report_msg = func;
+        ~~~^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/lame.h:1027:8: note: forward declaration of 'struct mpstr_tag'
+struct hip_global_struct;
+       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/mpglib_interface.c:32:27: note: expanded from macro 'hip_global_struct'
+#define hip_global_struct mpstr_tag 
+                          ^
+4 warnings and 16 errors generated.
+[2/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/tables.c.o
+[3/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/version.c.o
+[4/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/reservoir.c.o
+[5/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/util.c.o
+[6/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/quantize_pvt.c.o
+[7/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/takehiro.c.o
+[8/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/set_get.c.o
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        assert((0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1));
+                                                                       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:170:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        assert((0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1));
+                                                                       ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/set_get.c:1726:72: note: use function 'abs' instead
+/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/machine.h:172:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+2 warnings generated.
+[9/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/quantize.c.o
+[10/11] Building C object CMakeFiles/lamemp3.dir/libmp3lame/psymodel.c.o
+ninja: build stopped: subcommand failed.

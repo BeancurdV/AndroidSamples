@@ -1,0 +1,4 @@
+/Users/zhangfengcheng/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/.cxx/Debug/4s4g2t2k/x86 \
+  lamemp3

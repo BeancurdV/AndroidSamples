@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/.cxx/Debug/4s4g2t2k/arm64-v8a'
+ninja: no work to do.

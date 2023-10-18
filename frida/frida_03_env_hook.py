@@ -1,0 +1,2 @@
+# hook env->GetStringUTFChars()
+# art/

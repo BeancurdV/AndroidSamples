@@ -1,0 +1,18 @@
+ninja: Entering directory `/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/.cxx/Debug/2i1in1v6/arm64-v8a'
+[1/1] Linking CXX shared library /Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/build/intermediates/cxx/Debug/2i1in1v6/obj/arm64-v8a/liblamemp3.so
+FAILED: /Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/build/intermediates/cxx/Debug/2i1in1v6/obj/arm64-v8a/liblamemp3.so 
+: && /Users/zhangfengcheng/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/Users/zhangfengcheng/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -shared -Wl,-soname,liblamemp3.so -o /Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/build/intermediates/cxx/Debug/2i1in1v6/obj/arm64-v8a/liblamemp3.so CMakeFiles/lamemp3.dir/lamemp3_cpp.cpp.o CMakeFiles/lamemp3.dir/libmp3lame/VbrTag.c.o CMakeFiles/lamemp3.dir/libmp3lame/bitstream.c.o CMakeFiles/lamemp3.dir/libmp3lame/encoder.c.o CMakeFiles/lamemp3.dir/libmp3lame/fft.c.o CMakeFiles/lamemp3.dir/libmp3lame/gain_analysis.c.o CMakeFiles/lamemp3.dir/libmp3lame/id3tag.c.o CMakeFiles/lamemp3.dir/libmp3lame/lame.c.o CMakeFiles/lamemp3.dir/libmp3lame/mpglib_interface.c.o CMakeFiles/lamemp3.dir/libmp3lame/newmdct.c.o CMakeFiles/lamemp3.dir/libmp3lame/presets.c.o CMakeFiles/lamemp3.dir/libmp3lame/psymodel.c.o CMakeFiles/lamemp3.dir/libmp3lame/quantize.c.o CMakeFiles/lamemp3.dir/libmp3lame/quantize_pvt.c.o CMakeFiles/lamemp3.dir/libmp3lame/reservoir.c.o CMakeFiles/lamemp3.dir/libmp3lame/set_get.c.o CMakeFiles/lamemp3.dir/libmp3lame/tables.c.o CMakeFiles/lamemp3.dir/libmp3lame/takehiro.c.o CMakeFiles/lamemp3.dir/libmp3lame/util.c.o CMakeFiles/lamemp3.dir/libmp3lame/vbrquantize.c.o CMakeFiles/lamemp3.dir/libmp3lame/version.c.o  /Users/zhangfengcheng/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24/liblog.so  -latomic -lm && :
+ld: error: undefined symbol: bcopy
+>>> referenced by VbrTag.c:992 (/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/VbrTag.c:992)
+>>>               CMakeFiles/lamemp3.dir/libmp3lame/VbrTag.c.o:(lame_get_lametag_frame)
+>>> referenced by bitstream.c:1064 (/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/bitstream.c:1064)
+>>>               CMakeFiles/lamemp3.dir/libmp3lame/bitstream.c.o:(do_copy_buffer)
+>>> referenced by bitstream.c:141 (/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/bitstream.c:141)
+>>>               CMakeFiles/lamemp3.dir/libmp3lame/bitstream.c.o:(putheader_bits)
+>>> referenced 37 more times
+
+ld: error: undefined symbol: index
+>>> referenced by id3tag.c:1205 (/Users/zhangfengcheng/beancurd/android/AndroidSamples/nativelib/src/main/cpp/libmp3lame/id3tag.c:1205)
+>>>               CMakeFiles/lamemp3.dir/libmp3lame/id3tag.c.o:(id3tag_set_track)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
